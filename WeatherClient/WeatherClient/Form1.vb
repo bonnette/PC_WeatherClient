@@ -8,6 +8,7 @@ Public Class Main_frm
 
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ' This is the IP address of the WeatherPi
         Dim sURL As String
         sURL = "http://192.168.0.196/wthrdata.dat"
 
@@ -22,6 +23,7 @@ Public Class Main_frm
         Dim webdata As String = ""
         Dim i As Integer = 0
 
+        ' Sends a request to download the contents of "wthrdata.dat" from the WeatherPi web site 
         Do While Not sLine Is Nothing
             i += 1
             sLine = objReader.ReadLine
@@ -30,11 +32,12 @@ Public Class Main_frm
                 webdata = sLine
             End If
         Loop
+        ' "webdata" now contains the contents of "wthrdata.dat"
         objReader.Close()
         wthrdata_txt.Text = webdata
 
         Dim hold As Integer
-        ' Get Outdoor Temperature and display
+        ' Get Outdoor Temperature from the contents of "webdata" and display
         Dim ODtemp As String
         hold = Getcommas(0, webdata) ' The first piece of data is at "0" (The OutDoor Temperature)
         ODtemp = webdata.Substring((hold - 4), 4) ' Extract temperature from the data (Start index,length)
@@ -42,11 +45,13 @@ Public Class Main_frm
         ODtemp = FormatNumber(ODtemp, 1)
         temp_txt.Text = ODtemp + " F" ' Display in text box
 
+        ' Get Humidity and display
         Dim humi As String
         hold = Getcommas(1, webdata) ' The Next piece of data is at "1" (Humidity)
         humi = webdata.Substring((hold - 4), 4) ' Extract wind speed from the data (starting index, length)
         humi_txt.Text = humi + " %" ' Display in text
 
+        ' Get Indoor temperature and display
         Dim IDtemp As String
         hold = Getcommas(2, webdata) ' The Next piece of data is at "2" (The Indoor Temperature)
         IDtemp = webdata.Substring((hold - 4), 4) ' Extract temperature from the data (Start index,length)
@@ -54,41 +59,44 @@ Public Class Main_frm
         IDtemp = FormatNumber(IDtemp, 1)
         intemp_txt.Text = IDtemp + " F" ' Display in text box
 
+        ' Get Humidity
         Dim press As String
-
-        hold = Getcommas(3, webdata) ' The Next piece of data is at "5" (The press Speed)
+        hold = Getcommas(3, webdata) ' The Next piece of data is at "3" (The barometric pressure)
         press = webdata.Substring((hold - 8), 8) ' Extract pressure from the data (starting index, length)
         press = (press / 33.863) / 100 ' Convert Hga to Inches
         press = FormatNumber(press, 2) ' Format pressure to display only 2 digits after the decimal point
         press_txt.Text = press + " Inches" ' Display in text
 
+        ' Get wind speed 
         Dim wind As String
         hold = Getcommas(5, webdata) ' The Next piece of data is at "5" (The Wind Speed)
         wind = webdata.Substring((hold - 4), 4) ' Extract wind speed from the data (starting index, length)
         wind = FormatNumber(wind, 1, TriState.False) ' Format wind speed to display 1 digit after the decimal point and eliminate the leading zero
         wind_txt.Text = wind + " MPH" ' Display in text
 
+        ' Get wind gust
         Dim wg As String
         hold = Getcommas(6, webdata) ' The Next piece of data is at "6" (The Wind Gust Speed)
         wg = webdata.Substring((hold - 4), 4) ' Extract Wind Gust speed from the data (starting index, length)
         wg = FormatNumber(wg, 1, TriState.False) ' Format Wind Gust speed to display 1 digit after the decimal point and eliminate the leading zero
         wg_txt.Text = wg + " MPH" ' Display in text
 
+        ' Get wind direction
         Dim dir As String
         hold = Getcommas(7, webdata) ' The Next piece of data is at "7" (The Wind direction)
         dir = webdata.Substring((hold - 5), 5) ' Extract Wind direction from the data (starting index, length)
         dir = GetWdir(dir)  ' Take the number that represents the direction and turn it into a word (North, South etc)
         wdir_lbl.Text = dir ' Display in text
 
-
+        ' Get time
         Dim tim As String
-        hold = Getcommas(16, webdata) ' The Next piece of data is at "5" (The Wind Speed)
-        tim = webdata.Substring((hold - 8), 8) ' Extract wind speed from the data (starting index, length)
+        hold = Getcommas(16, webdata) ' The Next piece of data is at "16" (The time)
+        tim = webdata.Substring((hold - 8), 8) ' Extract time from the data (starting index, length)
         time_txt.Text = tim ' Display in text
 
 
     End Sub
-    ' Returns an index number that represents the Nth comma in "wtrhdata.dat" string
+    ' Returns an index number that represents the Nth comma in the "wtrhdata.dat" string
     Function Getcommas(ByVal x As Integer,
                    ByVal y As String)
 
