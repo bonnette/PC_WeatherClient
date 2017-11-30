@@ -1,0 +1,15 @@
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\bin\Release\WeatherClient.exe.config
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\bin\Release\WeatherClient.exe.manifest
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\bin\Release\WeatherClient.application
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\bin\Release\WeatherClient.exe
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\bin\Release\WeatherClient.pdb
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\bin\Release\WeatherClient.xml
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.Main_frm.resources
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.Resources.resources
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.vbproj.GenerateResource.Cache
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.vbproj.CoreCompileInputs.cache
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.exe.manifest
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.application
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.exe
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.xml
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.pdb
