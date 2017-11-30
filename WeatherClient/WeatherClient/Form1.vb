@@ -71,6 +71,7 @@ Public Class Main_frm
         Dim wind As String
         hold = Getcommas(5, webdata) ' The Next piece of data is at "5" (The Wind Speed)
         wind = webdata.Substring((hold - 4), 4) ' Extract wind speed from the data (starting index, length)
+        wind = wind * 0.62137119223733 ' Convert KPH to MPH
         wind = FormatNumber(wind, 1, TriState.False) ' Format wind speed to display 1 digit after the decimal point and eliminate the leading zero
         wind_txt.Text = wind + " MPH" ' Display in text
 
@@ -78,6 +79,7 @@ Public Class Main_frm
         Dim wg As String
         hold = Getcommas(6, webdata) ' The Next piece of data is at "6" (The Wind Gust Speed)
         wg = webdata.Substring((hold - 4), 4) ' Extract Wind Gust speed from the data (starting index, length)
+        wg = wind * 0.62137119223733 ' Convert KPH to MPH
         wg = FormatNumber(wg, 1, TriState.False) ' Format Wind Gust speed to display 1 digit after the decimal point and eliminate the leading zero
         wg_txt.Text = wg + " MPH" ' Display in text
 
