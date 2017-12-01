@@ -48,10 +48,11 @@ Partial Class Main_frm
         '
         Me.temp_txt.BackColor = System.Drawing.SystemColors.Control
         Me.temp_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.temp_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.temp_txt.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.temp_txt.Location = New System.Drawing.Point(11, 135)
+        Me.temp_txt.Multiline = True
         Me.temp_txt.Name = "temp_txt"
-        Me.temp_txt.Size = New System.Drawing.Size(71, 17)
+        Me.temp_txt.Size = New System.Drawing.Size(95, 33)
         Me.temp_txt.TabIndex = 98
         Me.temp_txt.TabStop = False
         '
@@ -59,10 +60,11 @@ Partial Class Main_frm
         '
         Me.wind_txt.BackColor = System.Drawing.SystemColors.Control
         Me.wind_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.wind_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.wind_txt.Location = New System.Drawing.Point(268, 135)
+        Me.wind_txt.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.wind_txt.Location = New System.Drawing.Point(256, 135)
+        Me.wind_txt.Multiline = True
         Me.wind_txt.Name = "wind_txt"
-        Me.wind_txt.Size = New System.Drawing.Size(63, 17)
+        Me.wind_txt.Size = New System.Drawing.Size(95, 33)
         Me.wind_txt.TabIndex = 96
         Me.wind_txt.TabStop = False
         '
@@ -72,15 +74,15 @@ Partial Class Main_frm
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(9, 110)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 15)
+        Me.Label1.Size = New System.Drawing.Size(86, 15)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Outdoor Temperature"
+        Me.Label1.Text = "Outdoor Temp"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(265, 110)
+        Me.Label2.Location = New System.Drawing.Point(254, 110)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 15)
         Me.Label2.TabIndex = 5
@@ -96,7 +98,7 @@ Partial Class Main_frm
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.Location = New System.Drawing.Point(424, 213)
+        Me.Label3.Location = New System.Drawing.Point(428, 216)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 15)
         Me.Label3.TabIndex = 0
@@ -107,7 +109,7 @@ Partial Class Main_frm
         Me.time_txt.BackColor = System.Drawing.SystemColors.Control
         Me.time_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.time_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.time_txt.Location = New System.Drawing.Point(426, 236)
+        Me.time_txt.Location = New System.Drawing.Point(430, 239)
         Me.time_txt.Name = "time_txt"
         Me.time_txt.Size = New System.Drawing.Size(71, 17)
         Me.time_txt.TabIndex = 92
@@ -117,10 +119,11 @@ Partial Class Main_frm
         '
         Me.intemp_txt.BackColor = System.Drawing.SystemColors.Control
         Me.intemp_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.intemp_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.intemp_txt.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.intemp_txt.Location = New System.Drawing.Point(11, 212)
+        Me.intemp_txt.Multiline = True
         Me.intemp_txt.Name = "intemp_txt"
-        Me.intemp_txt.Size = New System.Drawing.Size(74, 17)
+        Me.intemp_txt.Size = New System.Drawing.Size(95, 33)
         Me.intemp_txt.TabIndex = 95
         Me.intemp_txt.TabStop = False
         '
@@ -130,14 +133,14 @@ Partial Class Main_frm
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(9, 186)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(116, 15)
+        Me.Label4.Size = New System.Drawing.Size(77, 15)
         Me.Label4.TabIndex = 9
-        Me.Label4.Text = "In-Box Temperature"
+        Me.Label4.Text = "In-Box Temp"
         '
         'wdir_lbl
         '
         Me.wdir_lbl.AutoSize = True
-        Me.wdir_lbl.Location = New System.Drawing.Point(337, 139)
+        Me.wdir_lbl.Location = New System.Drawing.Point(357, 141)
         Me.wdir_lbl.Name = "wdir_lbl"
         Me.wdir_lbl.Size = New System.Drawing.Size(49, 13)
         Me.wdir_lbl.TabIndex = 10
@@ -147,7 +150,7 @@ Partial Class Main_frm
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(163, 110)
+        Me.Label5.Location = New System.Drawing.Point(135, 110)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(55, 15)
         Me.Label5.TabIndex = 11
@@ -157,10 +160,11 @@ Partial Class Main_frm
         '
         Me.humi_txt.BackColor = System.Drawing.SystemColors.Control
         Me.humi_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.humi_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.humi_txt.Location = New System.Drawing.Point(166, 135)
+        Me.humi_txt.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.humi_txt.Location = New System.Drawing.Point(138, 135)
+        Me.humi_txt.Multiline = True
         Me.humi_txt.Name = "humi_txt"
-        Me.humi_txt.Size = New System.Drawing.Size(71, 17)
+        Me.humi_txt.Size = New System.Drawing.Size(95, 33)
         Me.humi_txt.TabIndex = 97
         Me.humi_txt.TabStop = False
         '
@@ -168,7 +172,7 @@ Partial Class Main_frm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(163, 186)
+        Me.Label6.Location = New System.Drawing.Point(135, 186)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(56, 15)
         Me.Label6.TabIndex = 13
@@ -178,10 +182,11 @@ Partial Class Main_frm
         '
         Me.press_txt.BackColor = System.Drawing.SystemColors.Control
         Me.press_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.press_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.press_txt.Location = New System.Drawing.Point(165, 212)
+        Me.press_txt.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.press_txt.Location = New System.Drawing.Point(137, 212)
+        Me.press_txt.Multiline = True
         Me.press_txt.Name = "press_txt"
-        Me.press_txt.Size = New System.Drawing.Size(74, 17)
+        Me.press_txt.Size = New System.Drawing.Size(95, 33)
         Me.press_txt.TabIndex = 94
         Me.press_txt.TabStop = False
         '
@@ -189,7 +194,7 @@ Partial Class Main_frm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(265, 186)
+        Me.Label7.Location = New System.Drawing.Point(254, 186)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(63, 15)
         Me.Label7.TabIndex = 15
@@ -199,10 +204,11 @@ Partial Class Main_frm
         '
         Me.wg_txt.BackColor = System.Drawing.SystemColors.Control
         Me.wg_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.wg_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.wg_txt.Location = New System.Drawing.Point(267, 212)
+        Me.wg_txt.Font = New System.Drawing.Font("Sitka Heading", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.wg_txt.Location = New System.Drawing.Point(256, 212)
+        Me.wg_txt.Multiline = True
         Me.wg_txt.Name = "wg_txt"
-        Me.wg_txt.Size = New System.Drawing.Size(63, 17)
+        Me.wg_txt.Size = New System.Drawing.Size(95, 33)
         Me.wg_txt.TabIndex = 93
         Me.wg_txt.TabStop = False
         '
@@ -211,7 +217,7 @@ Partial Class Main_frm
         Me.wthrdata_txt.BackColor = System.Drawing.SystemColors.Control
         Me.wthrdata_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.wthrdata_txt.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.wthrdata_txt.Location = New System.Drawing.Point(11, 29)
+        Me.wthrdata_txt.Location = New System.Drawing.Point(11, 31)
         Me.wthrdata_txt.Multiline = True
         Me.wthrdata_txt.Name = "wthrdata_txt"
         Me.wthrdata_txt.Size = New System.Drawing.Size(478, 65)

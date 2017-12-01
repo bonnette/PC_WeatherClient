@@ -65,7 +65,7 @@ Public Class Main_frm
         press = webdata.Substring((hold - 8), 8) ' Extract pressure from the data (starting index, length)
         press = (press / 33.863) / 100 ' Convert Hga to Inches
         press = FormatNumber(press, 2) ' Format pressure to display only 2 digits after the decimal point
-        press_txt.Text = press + " Inches" ' Display in text
+        press_txt.Text = press + " In" ' Display in text
 
         ' Get wind speed 
         Dim wind As String
@@ -73,15 +73,15 @@ Public Class Main_frm
         wind = webdata.Substring((hold - 4), 4) ' Extract wind speed from the data (starting index, length)
         wind = wind * 0.62137119223733 ' Convert KPH to MPH
         wind = FormatNumber(wind, 1, TriState.False) ' Format wind speed to display 1 digit after the decimal point and eliminate the leading zero
-        wind_txt.Text = wind + " MPH" ' Display in text
+        wind_txt.Text = wind + " Mph" ' Display in text
 
         ' Get wind gust
         Dim wg As String
         hold = Getcommas(6, webdata) ' The Next piece of data is at "6" (The Wind Gust Speed)
         wg = webdata.Substring((hold - 4), 4) ' Extract Wind Gust speed from the data (starting index, length)
-        wg = wind * 0.62137119223733 ' Convert KPH to MPH
+        wg = wg * 0.62137119223733 ' Convert KPH to MPH
         wg = FormatNumber(wg, 1, TriState.False) ' Format Wind Gust speed to display 1 digit after the decimal point and eliminate the leading zero
-        wg_txt.Text = wg + " MPH" ' Display in text
+        wg_txt.Text = wg + " Mph" ' Display in text
 
         ' Get wind direction
         Dim dir As String
