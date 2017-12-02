@@ -14,3 +14,4 @@ C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient
 C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.xml
 C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.pdb
 C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.vbprojResolveAssemblyReference.cache
+C:\Users\bonne\Documents\Visual Studio 2017\Projects\WeatherClient\WeatherClient\obj\Release\WeatherClient.Form2.resources

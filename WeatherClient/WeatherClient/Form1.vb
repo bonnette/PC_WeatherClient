@@ -173,4 +173,16 @@ Public Class Main_frm
 
     End Sub
 
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        MessageBox.Show("WeatherClient Version 1.0" & vbCrLf & vbCrLf & "Copyright 2017 Bubbles" & vbCrLf & "all rights reserved", "About", MessageBoxButtons.OK)
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub SetupToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetupToolStripMenuItem.Click
+        Dim setupbox = New Form2()
+        setupbox.Show()
+    End Sub
 End Class

@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherClient.exe" size="202712">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherClient.exe" size="299992">
       <assemblyIdentity name="WeatherClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+LTk56Rui6lT+L/Llv1CovklvSizgVJ/FzCpXWl014s=</dsig:DigestValue>
+        <dsig:DigestValue>+uVcjOrMKEdb/iT4YDBJepLdHD8rWxvQPfSji9UfmaY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>NoKGgvT8wk+BSgromnbmYqwQwVDjBT8lexBGoBvhUdA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WeatherClient.exe.config" size="188">
+  <file name="WeatherClient.exe.config" size="1189">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>c922zfRb5ORzqEo8SDjt8Mx8lDMhGTWhqKcK/oileDM=</dsig:DigestValue>
+      <dsig:DigestValue>VmJtQnm6Jw5COzDeNtH1BQCur6B+0HJGaMJobk9FNeM=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
