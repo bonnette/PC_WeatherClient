@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+uVcjOrMKEdb/iT4YDBJepLdHD8rWxvQPfSji9UfmaY=</dsig:DigestValue>
+        <dsig:DigestValue>enjsVb38qk+6fWDHx4EPJL2A5lSj0uuwMYvu3egw2pw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>NoKGgvT8wk+BSgromnbmYqwQwVDjBT8lexBGoBvhUdA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WeatherClient.exe.config" size="1189">
+  <file name="WeatherClient.exe.config" size="1184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VmJtQnm6Jw5COzDeNtH1BQCur6B+0HJGaMJobk9FNeM=</dsig:DigestValue>
+      <dsig:DigestValue>ELtkMvHuJcWKbPuyvVK87qF+9SaUtHa/rKJO5reIiVQ=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
