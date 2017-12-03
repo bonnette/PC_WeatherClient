@@ -8,9 +8,12 @@ Public Class Main_frm
 
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        Dim ipentered As String = My.Settings.su_addr
+
         ' This is the IP address of the WeatherPi
         Dim sURL As String
-        sURL = "http://192.168.0.196/wthrdata.dat"
+        sURL = "http://" & ipentered & "/wthrdata.dat"
 
         Dim wrGETURL As WebRequest
         wrGETURL = WebRequest.Create(sURL)
@@ -182,7 +185,12 @@ Public Class Main_frm
     End Sub
 
     Private Sub SetupToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetupToolStripMenuItem.Click
+        Timer1.Stop()
         Dim setupbox = New Form2()
         setupbox.Show()
+    End Sub
+    ' When form 1 gets activated start timer
+    Private Sub Form1_Activated(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Activated
+        Timer1.Start()
     End Sub
 End Class

@@ -5,11 +5,5 @@
     <Setting Name="su_addr" Type="System.String" Scope="User">
       <Value Profile="(Default)">WeatherPi IPaddress</Value>
     </Setting>
-    <Setting Name="su_ssid" Type="System.String" Scope="User">
-      <Value Profile="(Default)">WiFi SSID</Value>
-    </Setting>
-    <Setting Name="su_pass" Type="System.String" Scope="User">
-      <Value Profile="(Default)">WiFi Password</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

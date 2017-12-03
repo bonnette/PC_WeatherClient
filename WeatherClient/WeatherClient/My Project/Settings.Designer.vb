@@ -65,30 +65,6 @@ Namespace My
                 Me("su_addr") = value
             End Set
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("WiFi SSID")>  _
-        Public Property su_ssid() As String
-            Get
-                Return CType(Me("su_ssid"),String)
-            End Get
-            Set
-                Me("su_ssid") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("WiFi Password")>  _
-        Public Property su_pass() As String
-            Get
-                Return CType(Me("su_pass"),String)
-            End Get
-            Set
-                Me("su_pass") = value
-            End Set
-        End Property
     End Class
 End Namespace
 

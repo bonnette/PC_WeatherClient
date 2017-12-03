@@ -1,0 +1,17 @@
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.exe.config
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.exe.manifest
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.application
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.exe
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.pdb
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.xml
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.vbprojResolveAssemblyReference.cache
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.Main_frm.resources
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.Form2.resources
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.Resources.resources
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.vbproj.GenerateResource.Cache
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.vbproj.CoreCompileInputs.cache
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.exe.manifest
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.application
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.exe
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.xml
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.pdb

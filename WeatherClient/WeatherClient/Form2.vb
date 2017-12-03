@@ -2,8 +2,6 @@
     Private Sub su_ok_btn_Click(sender As Object, e As EventArgs) Handles su_ok_btn.Click
         ' Save setup settings for later use
         My.Settings.su_addr = ip_txt.Text
-        My.Settings.su_ssid = ssid_txt.Text
-        My.Settings.su_pass = su_pw_txt.Text
         My.Settings.Save()
         Me.Hide()
     End Sub
@@ -15,7 +13,5 @@
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Get saved settings and load into form
         ip_txt.Text = My.Settings.su_addr
-        ssid_txt.Text = My.Settings.su_ssid
-        su_pw_txt.Text = My.Settings.su_pass
     End Sub
 End Class
