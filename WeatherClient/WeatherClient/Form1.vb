@@ -6,28 +6,38 @@ Imports System.String
 Public Class Main_frm
 
 
-
+    ' Most code is in a timer
+    ' This is because we want to get the data from the WeatherPi at specific intervals.
+    ' Since the Pi only updates the weather every 60 seconds. We only need to set the timer to run every 60 seconds.
+    ' BUT.... That means that the very first time the application is run. The user would have to wait for an entire minute before they see weather data.
+    ' So we instead set the timer to execute code every 10 seconds and we inform the user he will have to wait a few seconds before he sees the data.
+    ' Yes, it means we interrogate the Pi every 10 seconds and that means that we get the exact same data 5 out of 6 interrogations.
+    ' But, it's better that making the user wait.
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-        Dim ipentered As String = My.Settings.su_addr
+        ' We store the Weather Pi's IP address inside the "My.Settings" variables of Visual Basic
+        ' This is so we can enter an IP address during setup time and it is stored on disk.
+        ' This means we can shutdown the app and the data will still be there the next time the app is started.
 
-        ' This is the IP address of the WeatherPi
+        Dim ipentered As String = My.Settings.su_addr ' Retrieve the previously entered IP address. So we can use it in the app.
+
+        ' This is the URL of the WeatherPi
         Dim sURL As String
         sURL = "http://" & ipentered & "/wthrdata.dat"
 
         Dim wrGETURL As WebRequest
-        wrGETURL = WebRequest.Create(sURL)
+        wrGETURL = WebRequest.Create(sURL) 'Create a new WebRequest object. Supply the target URL as part of the call to Create to initialize the object with this value
 
         Dim objStream As Stream
-        objStream = wrGETURL.GetResponse.GetResponseStream()
+        objStream = wrGETURL.GetResponse.GetResponseStream() ' You can use the WebRequest to obtain a Stream object corresponding to the response to your request
 
-        Dim objReader As New StreamReader(objStream)
+        Dim objReader As New StreamReader(objStream) ' After the response stream is established. You can read through its contents line by line or even all at once. 
         Dim sLine As String = ""
         Dim webdata As String = ""
         Dim i As Integer = 0
 
         ' Sends a request to download the contents of "wthrdata.dat" from the WeatherPi web site 
-        Do While Not sLine Is Nothing
+        Do While Not sLine Is Nothing   'The loop reads the stream one line at a time until the ReadLine method returns Nothing, outputting each line to the console.
             i += 1
             sLine = objReader.ReadLine
             If Not sLine Is Nothing Then
@@ -170,26 +180,25 @@ Public Class Main_frm
         End If
 
     End Function
-
-
+    ' Form1 Loaded
     Private Sub Main_frm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-
+    ' Menu Item "About"
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         MessageBox.Show("WeatherClient Version 1.0" & vbCrLf & vbCrLf & "Copyright 2017 Bubbles" & vbCrLf & "all rights reserved", "About", MessageBoxButtons.OK)
     End Sub
-
+    ' Menu Item "Exit"
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
-
+    ' Menu Item "Setup"
     Private Sub SetupToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetupToolStripMenuItem.Click
         Timer1.Stop()
         Dim setupbox = New Form2()
         setupbox.Show()
     End Sub
-    ' When form 1 gets activated start timer
+    ' When form1 gets activated start timer
     Private Sub Form1_Activated(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Activated
         Timer1.Start()
     End Sub
