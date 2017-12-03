@@ -24,6 +24,13 @@ Public Class Main_frm
         ' This is the URL of the WeatherPi
         Dim sURL As String
         sURL = "http://" & ipentered & "/wthrdata.dat"
+        ' Check if the url is valid
+        Dim isit As Boolean
+        If CheckURL(isit) = False Then
+            Timer1.Stop()
+            MessageBox.Show("Unable to connect to the WeatherPi" & vbCrLf & "Restart the program and run setup again ", "Error", MessageBoxButtons.OK)
+        End If
+        ' if the URL is valid then continue
 
         Dim wrGETURL As WebRequest
         wrGETURL = WebRequest.Create(sURL) 'Create a new WebRequest object. Supply the target URL as part of the call to Create to initialize the object with this value
@@ -179,6 +186,22 @@ Public Class Main_frm
             Return ("Unknown")
         End If
 
+    End Function
+    Function CheckURL(ByVal urltocheck As String)
+        Dim ipentered As String = My.Settings.su_addr
+        Dim url As New Uri("http://" & ipentered & "/wthrdata.dat")
+        Dim req As System.Net.WebRequest
+        req = System.Net.WebRequest.Create(url)
+        Dim resp As System.Net.WebResponse
+        Try
+            resp = req.GetResponse()
+            resp.Close()
+            req = Nothing
+            Return True
+        Catch ex As Exception
+            req = Nothing
+            Return False
+        End Try
     End Function
     ' Form1 Loaded
     Private Sub Main_frm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
