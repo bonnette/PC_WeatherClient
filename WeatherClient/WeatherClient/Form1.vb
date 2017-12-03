@@ -11,8 +11,9 @@ Public Class Main_frm
     ' Since the Pi only updates the weather every 60 seconds. We only need to set the timer to run every 60 seconds.
     ' BUT.... That means that the very first time the application is run. The user would have to wait for an entire minute before they see weather data.
     ' So we instead set the timer to execute code every 10 seconds and we inform the user he will have to wait a few seconds before he sees the data.
-    ' Yes, it means we interrogate the Pi every 10 seconds and that means that we get the exact same data 5 out of 6 interrogations.
-    ' But, it's better that making the user wait.
+    ' We interrogate the Pi every 10 seconds and that means that we get the exact same data 5 out of 6 interrogations.
+    ' But, it's better than making the user wait a full 60 seconds at program start.
+
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
         ' We store the Weather Pi's IP address inside the "My.Settings" variables of Visual Basic
@@ -24,12 +25,14 @@ Public Class Main_frm
         ' This is the URL of the WeatherPi
         Dim sURL As String
         sURL = "http://" & ipentered & "/wthrdata.dat"
+
         ' Check if the url is valid
-        Dim isit As Boolean
-        If CheckURL(isit) = False Then
+        If CheckURL(ipentered) = False Then
             Timer1.Stop()
-            MessageBox.Show("Unable to connect to the WeatherPi" & vbCrLf & "Restart the program and run setup again ", "Error", MessageBoxButtons.OK)
+            MessageBox.Show("Unable to connect to the WeatherPi" & vbCrLf & "Restart the application and run setup again ", "Connection Error", MessageBoxButtons.OK)
+            Application.Restart()
         End If
+
         ' if the URL is valid then continue
 
         Dim wrGETURL As WebRequest
@@ -119,8 +122,7 @@ Public Class Main_frm
 
     End Sub
     ' Returns an index number that represents the Nth comma in the "wtrhdata.dat" string
-    Function Getcommas(ByVal x As Integer,
-                   ByVal y As String)
+    Function Getcommas(ByVal x As Integer, ByVal y As String)
 
         Dim rtnval As Integer = 0
         Dim nxtcmma As Integer = 0
@@ -188,11 +190,11 @@ Public Class Main_frm
 
     End Function
     Function CheckURL(ByVal urltocheck As String)
-        Dim ipentered As String = My.Settings.su_addr
-        Dim url As New Uri("http://" & ipentered & "/wthrdata.dat")
-        Dim req As System.Net.WebRequest
-        req = System.Net.WebRequest.Create(url)
-        Dim resp As System.Net.WebResponse
+
+        Dim url As New Uri("http://" & urltocheck & "/wthrdata.dat")
+        Dim req As WebRequest
+        req = WebRequest.Create(url)
+        Dim resp As WebResponse
         Try
             resp = req.GetResponse()
             resp.Close()
