@@ -14,3 +14,4 @@ C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj
 C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.pdb
 C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.pdb
 C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\bin\Debug\WeatherClient.xml
+C:\Users\bonne\Documents\GitHub\PC_WeatherClient\WeatherClient\WeatherClient\obj\Debug\WeatherClient.vbprojResolveAssemblyReference.cache

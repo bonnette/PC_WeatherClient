@@ -211,7 +211,7 @@ Public Class Main_frm
     End Sub
     ' Menu Item "About"
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MessageBox.Show("WeatherClient Version 1.0" & vbCrLf & vbCrLf & "Copyright 2017 Bubbles" & vbCrLf & "all rights reserved", "About", MessageBoxButtons.OK)
+        MessageBox.Show("WeatherClient Version 1.0" & vbCrLf & vbCrLf & "Copyright LBonnette 2017" & vbCrLf & "all rights reserved", "About", MessageBoxButtons.OK)
     End Sub
     ' Menu Item "Exit"
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
