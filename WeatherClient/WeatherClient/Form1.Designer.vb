@@ -48,6 +48,8 @@ Partial Class Main_frm
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.SetupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.rain_lbl = New System.Windows.Forms.Label()
+        Me.rain_txt = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -147,7 +149,7 @@ Partial Class Main_frm
         'wdir_lbl
         '
         Me.wdir_lbl.AutoSize = True
-        Me.wdir_lbl.Location = New System.Drawing.Point(357, 146)
+        Me.wdir_lbl.Location = New System.Drawing.Point(337, 117)
         Me.wdir_lbl.Name = "wdir_lbl"
         Me.wdir_lbl.Size = New System.Drawing.Size(49, 13)
         Me.wdir_lbl.TabIndex = 10
@@ -262,31 +264,53 @@ Partial Class Main_frm
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(104, 6)
         '
         'SetupToolStripMenuItem
         '
         Me.SetupToolStripMenuItem.Name = "SetupToolStripMenuItem"
-        Me.SetupToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SetupToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.SetupToolStripMenuItem.Text = "Setup"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'rain_lbl
+        '
+        Me.rain_lbl.AutoSize = True
+        Me.rain_lbl.Location = New System.Drawing.Point(337, 160)
+        Me.rain_lbl.Name = "rain_lbl"
+        Me.rain_lbl.Size = New System.Drawing.Size(29, 13)
+        Me.rain_lbl.TabIndex = 101
+        Me.rain_lbl.Text = "Rain"
+        '
+        'rain_txt
+        '
+        Me.rain_txt.BackColor = System.Drawing.SystemColors.Control
+        Me.rain_txt.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rain_txt.Font = New System.Drawing.Font("Sitka Heading", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rain_txt.Location = New System.Drawing.Point(372, 156)
+        Me.rain_txt.Name = "rain_txt"
+        Me.rain_txt.Size = New System.Drawing.Size(71, 17)
+        Me.rain_txt.TabIndex = 102
+        Me.rain_txt.TabStop = False
         '
         'Main_frm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(503, 261)
+        Me.Controls.Add(Me.rain_txt)
+        Me.Controls.Add(Me.rain_lbl)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.wthrdata_txt)
         Me.Controls.Add(Me.wg_txt)
@@ -338,4 +362,6 @@ Partial Class Main_frm
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents SetupToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents rain_lbl As Label
+    Friend WithEvents rain_txt As TextBox
 End Class

@@ -113,6 +113,12 @@ Public Class Main_frm
         dir = GetWdir(dir)  ' Take the number that represents the direction and turn it into a word (North, South etc)
         wdir_lbl.Text = dir ' Display in text
 
+        ' Get Rain total
+        Dim rain As String
+        hold = Getcommas(8, webdata) ' The Next piece of data is at "8" (Rain)
+        rain = webdata.Substring((hold - 4), 4) ' Extract rain total from the data (starting index, length)
+        rain_txt.Text = rain + " In" ' Display in text
+
         ' Get time
         Dim tim As String
         hold = Getcommas(16, webdata) ' The Next piece of data is at "16" (The time)

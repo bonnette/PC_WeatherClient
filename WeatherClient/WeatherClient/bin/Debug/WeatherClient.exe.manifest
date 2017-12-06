@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherClient.exe" size="300504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeatherClient.exe" size="301016">
       <assemblyIdentity name="WeatherClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+9YDGA6ugPh2cEMqYhavIW6SETxnnzaXp/DLAMskDBs=</dsig:DigestValue>
+        <dsig:DigestValue>K32RZ2rZ7IaGfsAarqJtoWDijXM4LJr2zDHtvBVDcIk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
